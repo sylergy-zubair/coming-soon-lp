@@ -19,7 +19,7 @@ function App() {
 					patience — we’ll be live here soon.
 				</p>
 				<a
-					href="mailto:hello@ladypoolcycles.co.uk"
+					href="mailto:info@ladypoolcycles.co.uk"
 					className="inline-block rounded-xl bg-[#f4f1ea] px-6 py-3 font-medium text-[#0f1419] transition-opacity hover:opacity-90"
 				>
 					Email us
