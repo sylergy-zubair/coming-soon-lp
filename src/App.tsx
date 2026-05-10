@@ -2,30 +2,71 @@ function App() {
 	const year = new Date().getFullYear();
 
 	return (
-		<div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#0f1419] px-6 text-[#f4f1ea]">
+		<div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-white px-6 py-12 text-slate-900">
 			<div
-				className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_1200px_800px_at_20%_-10%,rgba(196,92,62,0.35),transparent_55%),radial-gradient(ellipse_900px_600px_at_110%_20%,rgba(80,140,255,0.18),transparent_50%)]"
+				className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_900px_500px_at_50%_-20%,rgba(37,99,235,0.06),transparent_60%),radial-gradient(ellipse_700px_400px_at_100%_50%,rgba(15,23,42,0.04),transparent_55%)]"
 				aria-hidden
 			/>
-			<main className="relative z-10 w-full max-w-lg rounded-2xl border border-white/10 bg-white/[0.04] px-8 py-12 text-center shadow-2xl backdrop-blur-md">
-				<p className="mb-4 text-sm font-medium tracking-wide text-white/60">
+			<main className="relative z-10 w-full max-w-lg rounded-2xl border border-slate-200/90 bg-white px-8 py-10 text-center shadow-xl shadow-slate-200/60 sm:px-10 sm:py-12">
+				<h1 className="mx-auto mb-8 max-w-md">
+					<img
+						src="/ladypool-cycles-logo.png"
+						alt="Ladypool Cycles"
+						className="mx-auto h-auto w-full max-w-[min(100%,18rem)] object-contain sm:max-w-[20rem]"
+						width={200}
+						height={200}
+						decoding="async"
+					/>
+				</h1>
+				<p className="mb-6 text-sm font-medium tracking-wide text-slate-500">
 					Repairs · Builds · Bikes we trust
 				</p>
-				<h1 className="mb-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-					Ladypool Cycles
-				</h1>
-				<p className="mb-8 text-lg leading-relaxed text-white/70">
+				<p className="mb-8 text-lg leading-relaxed text-slate-600">
 					We’re putting the finishing touches on our new site. Thanks for your
 					patience — we’ll be live here soon.
 				</p>
 				<a
 					href="mailto:info@ladypoolcycles.co.uk"
-					className="inline-block rounded-xl bg-[#f4f1ea] px-6 py-3 font-medium text-[#0f1419] transition-opacity hover:opacity-90"
+					className="inline-block rounded-xl bg-slate-900 px-6 py-3 font-medium text-white transition-opacity hover:opacity-90"
 				>
 					Email us
 				</a>
+				<div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+					<a
+						href="https://www.facebook.com/LadypoolCycles/"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Ladypool Cycles on Facebook"
+						className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-sm transition-opacity hover:opacity-90"
+					>
+						<svg
+							className="h-5 w-5"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							aria-hidden
+						>
+							<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+						</svg>
+					</a>
+					<a
+						href="https://www.instagram.com/ladypoolcycles/"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Ladypool Cycles on Instagram"
+						className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[#f09433] via-[#dc2743] to-[#bc1888] text-white shadow-sm transition-opacity hover:opacity-90"
+					>
+						<svg
+							className="h-5 w-5"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							aria-hidden
+						>
+							<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+						</svg>
+					</a>
+				</div>
 			</main>
-			<p className="relative z-10 mt-10 text-sm text-white/40">
+			<p className="relative z-10 mt-10 text-sm text-slate-400">
 				© {year} Ladypool Cycles
 			</p>
 		</div>
